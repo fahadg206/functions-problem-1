@@ -4,10 +4,12 @@ let myProblem = 'Hello this is functions problem 1.'
 let myArray = myProblem.split(" ")
 console.log(myArray)
 
-for(let value = 0; value < myArray.length; value++) {
-    //console.log(myArray.length[value])
-    if (myArray.length[value] > 8) {
-        return console.log('this is the largest string')
-    } else {console.log('this is NOT the largest string')}
+let longestWord = 0
 
+for(let value = 0; value < myArray.length; value++) {
+    if(myArray[value].length > longestWord ) {
+        longestWord = myArray[value].length
+    }
 }
+
+console.log(longestWord)
