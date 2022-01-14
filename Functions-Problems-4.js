@@ -3,16 +3,26 @@
 //For numbers that are multiples of both three and five print "FizzBuzz".
 
 function integer() {
-    let remainder = "";
-    for(i=1; i <= 100, i++;) {
-        if(i % 3 === 0) {
-        remainder += 'Fizz'
+    for(i=1; i <= 100; i++) {
+        let str = "";
+        if(i % 3 === 0 && i % 5 === 0) {
+        str = 'FizzBuzz';
+        console.log(str);
         } else if(i % 5 === 0) {
-        remainder += 'Buzz'
-        } else if(i % 3 && i % 5 === 0) {
-        remainder += 'FizzBuzz'
+        str = 'Buzz';
+        console.log(str);
+        } else if(i % 3 === 0) {
+        str = 'Fizz';
+        console.log(str);
         }
     }
-}
+
+} 
+
+integer(); 
+
+
+
+
 
 
